@@ -79,7 +79,7 @@ header {
 
 /* Banner Section start */
 .banner_section {
-    background: url('./images/Group\ 14.png');
+  background: url('./images/Group\ 14.png');
 }
 .banner_container {
   max-width: 1300px;
@@ -118,6 +118,10 @@ header {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .banner_content p {
   color: #534c64;
@@ -130,6 +134,49 @@ header {
 .banner_content .blue {
   background: #4ec5f7;
   margin-left: 1rem;
+}
+
+/* VIdeo games */
+.funny_videos_container {
+  max-width: 1300px;
+  margin: 2rem auto;
+}
+.games_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.funny_video_title {
+  text-align: center;
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.funny_video_title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.funny_video_desc {
+  color: #534c64;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.875rem; /* 166.667% */
+}
+.game_card_text {
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.875rem; /* 150% */
+  margin-top: 1.2rem;
+}
+.game_card img {
+  width: 100%;
+}
+.game_card {
+  margin-top: 2rem;
 }
 
 /* ---------------------------------------------- */
@@ -186,5 +233,25 @@ header {
   }
   .banner_content h2 {
     font-size: 4rem;
+  }
+  /* funny videos */
+  .games_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .game_card img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+  .game_card_text {
+    text-align: center;
+  }
+  .funny_video_title {
+    font-size: 1.7rem;
+  }
+  .funny_video_desc {
+    font-size: .765rem;/* 166.667% */
   }
 }

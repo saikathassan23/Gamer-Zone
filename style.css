@@ -180,6 +180,58 @@ header {
   margin-top: 2rem;
 }
 
+/* Offer section */
+.offer_section_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.offer_content_container {
+  display: flex;
+  justify-content: center;
+}
+.offer_img img {
+  width: 30rem;
+}
+.offer_content {
+  /* border: 2px solid tomato; */
+  width: 50%;
+  height: 50%;
+}
+.offer_title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.75rem; /* 125% */
+}
+.offer_title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.offer_desc {
+  color: #534c64;
+  font-size: 1.125rem;
+  line-height: 1.875rem; /* 166.667% */
+}
+.offer_img{
+    position: relative;
+}
+.offer_img .position_mouse{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border: 5px solid white;
+    border-radius: 0.5rem;
+    background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat;
+    bottom: -20%;
+    right: -20%;
+}
+
+
 /* ---------------------------------------------- */
 
 /* MEDIA QUERY  */
@@ -240,6 +292,7 @@ header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
+    margin-bottom: 10rem;
   }
   .game_card img {
     width: 60%;
@@ -254,5 +307,30 @@ header {
   }
   .funny_video_desc {
     font-size: 0.765rem; /* 166.667% */
+  }
+  /* offer section */
+  .offer_section_container {
+    flex-direction: column-reverse;
+  }
+  .offer_img img {
+    width: 20rem;
+  }
+  .offer_img .position_mouse{
+    width: 9rem;
+    height: 9rem;
+}
+.offer_desc {
+    margin-bottom: 2rem;
+  }
+  .offer_content_container {
+    text-align: center;
+  }
+  .offer_title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 3.75rem; /* 125% */
+  }
+  .offer_content {
+    width: 60%;
   }
 }

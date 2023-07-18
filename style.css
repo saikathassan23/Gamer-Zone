@@ -49,11 +49,12 @@ header {
   align-items: center;
   gap: 5px;
 }
-/* .nav_title h1 span{
-    background: linear-gradient(#FF42A5 0%, #FF42A5 100%);
-    color: transparent;
-    background-clip: text;
-} */
+.nav_title h1 span {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav_title svg,
 .items ul svg {
   vertical-align: middle;
@@ -252,6 +253,6 @@ header {
     font-size: 1.7rem;
   }
   .funny_video_desc {
-    font-size: .765rem;/* 166.667% */
+    font-size: 0.765rem; /* 166.667% */
   }
 }

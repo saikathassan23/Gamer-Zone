@@ -21,10 +21,6 @@ body {
   padding: 10px 20px;
 }
 
-/* nav {
-  max-width: 1300px;
-  margin: 0 auto;
-} */
 ul {
   list-style: none;
 }
@@ -348,6 +344,7 @@ footer {
 
 /* MEDIA QUERY  */
 
+
 @media screen and (max-width: 576px) {
   /* nav section */
   .nav_container {
@@ -404,7 +401,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
   }
   .game_card img {
     width: 60%;
@@ -430,11 +427,11 @@ footer {
     flex-direction: column-reverse;
   }
   .offer_img img {
-    width: 20rem;
+    width: 15rem;
   }
   .offer_img .position_mouse {
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
   }
   .offer_desc {
     margin-bottom: 2rem;
@@ -455,18 +452,12 @@ footer {
   .game_types_container {
     width: 100%;
     /* padding: 20px; */
-    margin-top: 5rem;
+    margin:5rem auto 2rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    /* border: 1px solid tomato; */
-
+    gap: 0px;
   }
   .game_type {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-    /* border: 1px solid blue; */
     height: 3.5rem;
     border-radius: 5rem;
     padding: 2px 20px;
@@ -496,6 +487,13 @@ footer {
 
 /* ----------- TABLET SCREEN ----------- */
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  header{
+    width: 95%;
+  }
+  .banner_section{
+    width: 95%;
+    margin: 0 auto;
+  }
   .items {
     width: 90%;
   }
@@ -508,8 +506,11 @@ footer {
   /* offer section */
   .offer_section_container {
     flex-direction: column-reverse;
+    margin-top: 7rem;
+    text-align: center;
   }
   .offer_img img {
+    margin-top: 2rem;
     width: 20rem;
   }
 

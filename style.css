@@ -261,13 +261,58 @@ header {
   border-radius: 5rem;
   padding: 2px 20px;
 }
-.game_type img{
-    width: 100%;
+.game_type img {
+  width: 100%;
 }
 /* footer */
 footer {
-  min-height: 300px;
+  color: #fff;
+  min-height: 30rem;
   background-color: #0b0223;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_container {
+  width: 50%;
+  margin: 0 auto;
+}
+.footer_container .footer_links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 2rem;
+}
+.footer_links p,
+.footer_icons svg,
+.footer_security p
+{
+  cursor: pointer;
+}
+.footer_container .nav_title {
+  margin-bottom: 2rem;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.footer_icons{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto 2rem;
+  justify-content: space-around;
+
+}
+.footer_icons svg{
+  margin-left: 2rem;
+}
+.footer_security {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+}
+.copy_right{
+  text-align: center;
 }
 
 /* ---------------------------------------------- */
@@ -396,5 +441,18 @@ footer {
   }
   .game_name {
     font-size: 0.7rem;
+  }
+
+  /* footer */
+  .footer_container {
+    width: 80%;
+  }
+  .footer_container .footer_links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .footer_security {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }

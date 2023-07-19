@@ -214,7 +214,6 @@ header {
   margin-top: 1rem;
 }
 
-
 /* Offer section */
 .offer_section_container {
   max-width: 1300px;
@@ -288,8 +287,8 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  width: 12rem;
-  height: 5rem;
+  width: 80%;
+  height: 4rem;
   border-radius: 5rem;
   padding: 2px 20px;
 }
@@ -459,13 +458,16 @@ footer {
     margin-top: 5rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    /* border: 1px solid tomato; */
+
   }
   .game_type {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 120px;
-    height: 5rem;
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 3.5rem;
     border-radius: 5rem;
     padding: 2px 20px;
     gap: 0px;
@@ -490,4 +492,46 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+}
+
+/* ----------- TABLET SCREEN ----------- */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .items {
+    width: 90%;
+  }
+  /* funny videos */
+  .games_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* offer section */
+  .offer_section_container {
+    flex-direction: column-reverse;
+  }
+  .offer_img img {
+    width: 20rem;
+  }
+
+  /* game types */
+  .game_types_container {
+    /* border: 1px solid teal; */
+    margin-top: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .game_type {
+    width: 80%;
+    height: 3.5rem;
+    padding: 0px 10px;
+  }
+  .game_type img {
+    /* width: 100%; */
+    width: 50px;
+  }
+  .game_name {
+    font-size: 0.7rem;
+  }
+ 
+  
+  
 }
